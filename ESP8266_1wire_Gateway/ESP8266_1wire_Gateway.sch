@@ -20533,7 +20533,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R9" library="resistor" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R14" library="resistor" deviceset="R-EU_" device="R0805" value="4k7"/>
 <part name="R13" library="resistor" deviceset="R-EU_" device="R0805" value="4k7"/>
-<part name="FLASH_SW" library="mechanics" deviceset="DTSM-3" device=""/>
 <part name="IC2" library="SparkFun-PowerIC" deviceset="V_REG_LM1117" device="SOT223" value="3.3V"/>
 <part name="VIN" library="my" deviceset="W237-02P" device="" value="7-14"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -20637,15 +20636,6 @@ resistor</text>
 <wire x1="-24.13" y1="45.72" x2="-24.13" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="-24.13" y1="60.96" x2="-38.1" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="-24.13" y1="45.72" x2="-38.1" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
-<text x="70.104" y="16.764" size="1.778" layer="97">mit SJ1 und SJ2 kann ESD-Schutz 
-überbrückt werden (ZD1 entfällt)
-
-mit SJ4 und SJ3 kann BusMaster 
-überbrückt werden und eine 
-andere GPIO für 1W-Signal
-verwendet werden (I2C bleibt 
-anderweitig benutzbar)
- (IC3, Q3, R14, R11 entfallen)</text>
 <wire x1="128.27" y1="33.655" x2="128.27" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="177.8" y1="45.72" x2="128.27" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="177.8" y1="33.655" x2="177.8" y2="45.72" width="0.1524" layer="97" style="shortdash"/>
@@ -20728,9 +20718,6 @@ Clear (muss in der Software unterstützt werden):
 <instance part="R9" gate="G$1" x="-8.255" y="114.3" rot="R90"/>
 <instance part="R14" gate="G$1" x="-41.275" y="-2.413" rot="R90"/>
 <instance part="R13" gate="G$1" x="-48.387" y="-2.54" rot="R90"/>
-<instance part="FLASH_SW" gate="G$1" x="87.63" y="52.07" smashed="yes" rot="R180">
-<attribute name="NAME" x="94.615" y="48.26" size="1.778" layer="95" rot="R90"/>
-</instance>
 <instance part="IC2" gate="G$1" x="154.305" y="86.36"/>
 <instance part="VIN" gate="-1" x="119.38" y="113.665" rot="MR180"/>
 <instance part="VIN" gate="-2" x="119.38" y="123.825" smashed="yes" rot="MR180">
@@ -20813,8 +20800,8 @@ Clear (muss in der Software unterstützt werden):
 <instance part="G0" gate="1" x="61.595" y="30.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="60.706" y="27.305" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="I2C_1" gate="A" x="156.21" y="18.415"/>
-<instance part="I2C_2" gate="A" x="167.005" y="18.415"/>
+<instance part="I2C_1" gate="A" x="165.735" y="17.78"/>
+<instance part="I2C_2" gate="A" x="176.53" y="17.78"/>
 <instance part="5V" gate="1" x="-53.34" y="30.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="-54.229" y="27.305" size="1.778" layer="95" rot="R270"/>
 </instance>
@@ -20830,9 +20817,9 @@ Clear (muss in der Software unterstützt werden):
 <instance part="1W" gate="-1" x="170.18" y="-3.175" rot="R180"/>
 <instance part="1W" gate="-2" x="170.18" y="1.905" rot="R180"/>
 <instance part="1W" gate="-3" x="170.18" y="6.985" rot="R180"/>
-<instance part="IC4" gate="G$1" x="128.27" y="6.35" smashed="yes">
-<attribute name="NAME" x="133.985" y="6.985" size="1.778" layer="95"/>
-<attribute name="VALUE" x="132.715" y="-2.54" size="1.778" layer="96" rot="R180"/>
+<instance part="IC4" gate="G$1" x="139.7" y="7.62" smashed="yes">
+<attribute name="NAME" x="145.415" y="8.255" size="1.778" layer="95"/>
+<attribute name="VALUE" x="144.145" y="-1.27" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND1" gate="1" x="-60.325" y="30.48" smashed="yes" rot="R180">
 <attribute name="NAME" x="-61.214" y="27.305" size="1.778" layer="95" rot="R270"/>
@@ -20854,16 +20841,16 @@ Clear (muss in der Software unterstützt werden):
 <instance part="SJ4" gate="G$1" x="-10.033" y="-31.242" smashed="yes" rot="R180">
 <attribute name="NAME" x="-8.128" y="-27.686" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="CLR" gate="G$1" x="137.795" y="20.955"/>
+<instance part="CLR" gate="G$1" x="144.145" y="20.955"/>
 <instance part="GND2" gate="1" x="173.355" y="38.1" rot="R90"/>
 <instance part="R20" gate="G$1" x="151.892" y="38.1" rot="R180"/>
 <instance part="C8" gate="G$1" x="-42.545" y="67.31"/>
 <instance part="SJ5" gate="G$1" x="-32.512" y="-18.415" smashed="yes" rot="R180">
 <attribute name="NAME" x="-30.607" y="-14.859" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="FLASH" gate="G$1" x="69.596" y="53.34" smashed="yes" rot="R180">
-<attribute name="NAME" x="75.946" y="47.625" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="75.946" y="58.42" size="1.778" layer="96" rot="R180"/>
+<instance part="FLASH" gate="G$1" x="70.866" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="77.216" y="47.625" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="77.216" y="58.42" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -20878,8 +20865,8 @@ Clear (muss in der Software unterstützt werden):
 </segment>
 <segment>
 <pinref part="CLR" gate="G$1" pin="1"/>
-<wire x1="135.255" y1="23.495" x2="123.19" y2="23.495" width="0.1524" layer="91"/>
-<label x="123.825" y="24.13" size="1.778" layer="95"/>
+<wire x1="141.605" y1="23.495" x2="129.54" y2="23.495" width="0.1524" layer="91"/>
+<label x="130.175" y="24.13" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -20891,8 +20878,8 @@ Clear (muss in der Software unterstützt werden):
 </segment>
 <segment>
 <pinref part="CLR" gate="G$1" pin="2"/>
-<wire x1="135.255" y1="20.955" x2="123.19" y2="20.955" width="0.1524" layer="91"/>
-<label x="123.825" y="18.415" size="1.778" layer="95"/>
+<wire x1="141.605" y1="20.955" x2="129.54" y2="20.955" width="0.1524" layer="91"/>
+<label x="130.175" y="18.415" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -20947,11 +20934,11 @@ Clear (muss in der Software unterstützt werden):
 </segment>
 <segment>
 <pinref part="I2C_1" gate="A" pin="1"/>
-<wire x1="164.465" y1="23.495" x2="153.67" y2="23.495" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="23.495" x2="141.605" y2="23.495" width="0.1524" layer="91"/>
-<junction x="153.67" y="23.495"/>
+<wire x1="173.99" y1="22.86" x2="163.195" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="163.195" y1="22.86" x2="151.13" y2="22.86" width="0.1524" layer="91"/>
+<junction x="163.195" y="22.86"/>
 <pinref part="I2C_2" gate="A" pin="1"/>
-<label x="142.875" y="23.495" size="1.778" layer="95"/>
+<label x="152.4" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="3V3" gate="1" pin="MP"/>
@@ -21014,13 +21001,9 @@ Clear (muss in der Software unterstützt werden):
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="-47.625" y1="48.26" x2="-47.625" y2="43.18" width="0.1524" layer="91"/>
 <junction x="-47.625" y="43.18"/>
-<pinref part="FLASH_SW" gate="G$1" pin="2"/>
-<wire x1="87.63" y1="46.99" x2="87.63" y2="45.085" width="0.1524" layer="91"/>
-<wire x1="87.63" y1="45.085" x2="78.105" y2="45.085" width="0.1524" layer="91"/>
 <junction x="78.105" y="43.18"/>
 <junction x="-56.515" y="43.18"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="78.105" y1="45.085" x2="78.105" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-56.515" y1="47.625" x2="-56.515" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="-27.94" y1="46.355" x2="-27.94" y2="43.18" width="0.1524" layer="91"/>
@@ -21031,11 +21014,9 @@ Clear (muss in der Software unterstützt werden):
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="-42.545" y1="62.23" x2="-42.545" y2="43.18" width="0.1524" layer="91"/>
 <junction x="-42.545" y="43.18"/>
-<wire x1="72.136" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="50.8" x2="73.66" y2="45.085" width="0.1524" layer="91"/>
+<wire x1="73.406" y1="50.8" x2="78.105" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="78.105" y1="50.8" x2="78.105" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="FLASH" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="45.085" x2="78.105" y2="45.085" width="0.1524" layer="91"/>
-<junction x="78.105" y="45.085"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -21102,11 +21083,11 @@ Clear (muss in der Software unterstützt werden):
 </segment>
 <segment>
 <pinref part="I2C_1" gate="A" pin="2"/>
-<wire x1="164.465" y1="20.955" x2="153.67" y2="20.955" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="20.955" x2="141.605" y2="20.955" width="0.1524" layer="91"/>
-<junction x="153.67" y="20.955"/>
+<wire x1="173.99" y1="20.32" x2="163.195" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="163.195" y1="20.32" x2="151.13" y2="20.32" width="0.1524" layer="91"/>
+<junction x="163.195" y="20.32"/>
 <pinref part="I2C_2" gate="A" pin="2"/>
-<label x="142.875" y="20.955" size="1.778" layer="95"/>
+<label x="152.4" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-40.005" y1="33.02" x2="-40.005" y2="34.925" width="0.1524" layer="91"/>
@@ -21167,11 +21148,11 @@ Clear (muss in der Software unterstützt werden):
 </segment>
 <segment>
 <pinref part="I2C_1" gate="A" pin="4"/>
-<wire x1="164.465" y1="15.875" x2="153.67" y2="15.875" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="15.875" x2="141.605" y2="15.875" width="0.1524" layer="91"/>
-<junction x="153.67" y="15.875"/>
+<wire x1="173.99" y1="15.24" x2="163.195" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="163.195" y1="15.24" x2="151.13" y2="15.24" width="0.1524" layer="91"/>
+<junction x="163.195" y="15.24"/>
 <pinref part="I2C_2" gate="A" pin="4"/>
-<label x="142.875" y="15.875" size="1.778" layer="95"/>
+<label x="152.4" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-57.658" y1="-12.065" x2="-67.564" y2="-12.065" width="0.1524" layer="91"/>
@@ -21263,11 +21244,11 @@ Clear (muss in der Software unterstützt werden):
 </segment>
 <segment>
 <pinref part="I2C_1" gate="A" pin="3"/>
-<wire x1="164.465" y1="18.415" x2="153.67" y2="18.415" width="0.1524" layer="91"/>
-<wire x1="153.67" y1="18.415" x2="141.605" y2="18.415" width="0.1524" layer="91"/>
-<junction x="153.67" y="18.415"/>
+<wire x1="173.99" y1="17.78" x2="163.195" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="163.195" y1="17.78" x2="151.13" y2="17.78" width="0.1524" layer="91"/>
+<junction x="163.195" y="17.78"/>
 <pinref part="I2C_2" gate="A" pin="3"/>
-<label x="142.875" y="18.415" size="1.778" layer="95"/>
+<label x="152.4" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -21374,9 +21355,9 @@ Clear (muss in der Software unterstützt werden):
 <wire x1="165.1" y1="-3.175" x2="152.4" y2="-3.175" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="128.27" y1="13.97" x2="114.3" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="15.24" x2="125.73" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="VDD"/>
-<label x="114.3" y="11.43" size="1.778" layer="95"/>
+<label x="125.73" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="1W_" class="0">
@@ -21413,8 +21394,8 @@ Clear (muss in der Software unterstützt werden):
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="1W"/>
-<wire x1="118.11" y1="6.35" x2="114.3" y2="6.35" width="0.1524" layer="91"/>
-<label x="114.3" y="3.81" size="1.778" layer="95"/>
+<wire x1="129.54" y1="7.62" x2="125.73" y2="7.62" width="0.1524" layer="91"/>
+<label x="125.73" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_ESD" class="0">
@@ -21434,9 +21415,9 @@ Clear (muss in der Software unterstützt werden):
 <pinref part="1W" gate="-3" pin="KL"/>
 </segment>
 <segment>
-<wire x1="128.27" y1="-1.27" x2="114.3" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="0" x2="125.73" y2="0" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="GND"/>
-<label x="114.3" y="-0.635" size="1.778" layer="95"/>
+<label x="125.73" y="0.635" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -21578,16 +21559,10 @@ Clear (muss in der Software unterstützt werden):
 </net>
 <net name="N$10" class="0">
 <segment>
-<wire x1="72.136" y1="53.34" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="53.34" x2="73.66" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="73.406" y1="53.34" x2="78.105" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="78.105" y1="53.34" x2="78.105" y2="60.198" width="0.1524" layer="91"/>
 <pinref part="FLASH" gate="G$1" pin="2"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="FLASH_SW" gate="G$1" pin="1"/>
-<wire x1="87.63" y1="57.15" x2="87.63" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="87.63" y1="58.42" x2="78.105" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="78.105" y1="58.42" x2="78.105" y2="60.198" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="58.42" x2="78.105" y2="58.42" width="0.1524" layer="91"/>
-<junction x="78.105" y="58.42"/>
 </segment>
 </net>
 </nets>
