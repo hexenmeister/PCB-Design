@@ -531,7 +531,7 @@
 <rectangle x1="24.3078" y1="56.4769" x2="24.765" y2="56.5023" layer="22" rot="R180"/>
 <rectangle x1="24.3586" y1="56.5023" x2="24.7396" y2="56.5277" layer="22" rot="R180"/>
 <rectangle x1="24.4348" y1="56.5277" x2="24.6888" y2="56.5531" layer="22" rot="R180"/>
-<text x="49.05375" y="56.515" size="1.016" layer="22" font="vector" ratio="14" rot="SMR0">ESP/MS-GW/v1.3/21.02.2016</text>
+<text x="49.05375" y="56.515" size="1.016" layer="22" font="vector" ratio="14" rot="SMR0">ESP/MS-GW/v1.3.1/23.03.2016</text>
 <text x="4.1275" y="59.055" size="1.016" layer="21" font="vector" ratio="14" rot="SR90">VCC</text>
 <text x="4.1275" y="53.975" size="1.016" layer="21" font="vector" ratio="14" rot="SR90">GND</text>
 <text x="6.7945" y="51.435" size="1.016" layer="22" font="vector" ratio="16" rot="MR0">s6z.de</text>
@@ -968,11 +968,12 @@
 <text x="38.1" y="54.61" size="0.6604" layer="22" ratio="14" rot="MR0">RX</text>
 <text x="41.402" y="54.61" size="0.6604" layer="22" ratio="14" rot="MR0">3.3V</text>
 <text x="43.688" y="54.61" size="0.6604" layer="22" ratio="14" rot="MR0">GND</text>
-<text x="33.782" y="54.102" size="0.8128" layer="21" ratio="14" rot="SMR270">PRG</text>
+<text x="33.02" y="54.102" size="0.8128" layer="21" ratio="14" rot="R270">PRG</text>
 <wire x1="34.036" y1="54.229" x2="44.069" y2="54.229" width="0.254" layer="21"/>
 <wire x1="44.069" y1="54.229" x2="44.069" y2="51.816" width="0.254" layer="21"/>
 <wire x1="44.069" y1="51.816" x2="34.036" y2="51.816" width="0.254" layer="21"/>
 <wire x1="34.036" y1="51.816" x2="34.036" y2="54.229" width="0.254" layer="21"/>
+<text x="21.082" y="73.787" size="1.016" layer="21" ratio="16">+</text>
 </plain>
 <libraries>
 <library name="my">
@@ -4044,7 +4045,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </element>
 <element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX" value="JUMPER-PAD-3-2OF3_NC_BY_TRACE_SMALL" x="19.05" y="73.3425" smashed="yes" rot="R90"/>
 <element name="PRG" library="my" package="1X04" value="" x="39.0525" y="53.0225" smashed="yes" rot="MR180">
-<attribute name="NAME" x="33.7312" y="53.9877" size="0.8128" layer="26" ratio="14" rot="MR270"/>
+<attribute name="NAME" x="33.7312" y="53.9877" size="0.8128" layer="26" ratio="14" rot="SMR270"/>
 <attribute name="VALUE" x="33.9725" y="56.1975" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="C5" library="resistor" package="C0805" value="104" x="19.939" y="67.437" smashed="yes" rot="R270">
