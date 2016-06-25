@@ -13145,7 +13145,7 @@ Source: www.kingbright.com</description>
 <pad name="TX" x="22.86" y="17.78" drill="0.8" shape="octagon"/>
 <rectangle x1="-1.27" y1="-1.27" x2="1.27" y2="19.05" layer="21"/>
 <rectangle x1="21.59" y1="-1.27" x2="24.13" y2="19.05" layer="21"/>
-<text x="8.89" y="19.05" size="0.8128" layer="25" font="vector"> WEMOS
+<text x="8.89" y="19.05" size="0.8128" layer="48" font="vector"> WEMOS
 Controller</text>
 <wire x1="2" y1="-9" x2="25" y2="-9" width="0.127" layer="21" style="shortdash"/>
 <wire x1="25" y1="-9" x2="25" y2="24" width="0.127" layer="21" style="shortdash"/>
