@@ -13768,14 +13768,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="IC1" library="linear" deviceset="78*" device="TV" technology="05" value="7805"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value="bypass vreg"/>
-<part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value="bypass l.shift"/>
-<part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="470p"/>
+<part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK" value="bypass"/>
+<part name="C1" library="resistor" deviceset="C-EU" device="C0805" value="470p*"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NO" device="YES_SILK" value="1w-VCC: 5V | 3V3"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="pullup*"/>
+<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NO" device="YES_SILK" value="5V | 3V3"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="1k-2k2*"/>
 <part name="I2C_3" library="my" deviceset="PINHD-1X4_S" device="" value=" "/>
 <part name="I2C_4" library="my" deviceset="PINHD-1X4_S" device="" value=" I2C 5V"/>
-<part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NO" device="YES_SILK" value="Direkt | BusMaster"/>
+<part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NO" device="YES_SILK" value="direct | busmaster"/>
 <part name="JP1" library="my" deviceset="PINHD-1X3_S" device=""/>
 </parts>
 <sheets>
@@ -13827,28 +13827,34 @@ oder IC3 bestückt, jedoch nie beides!</text>
 <text x="68.326" y="36.576" size="1.778" layer="97">optional pullup</text>
 <text x="119.126" y="132.461" size="1.778" layer="97">I2C 5V</text>
 <text x="154.051" y="132.461" size="1.778" layer="97">I2C 3.3V</text>
-<text x="189.611" y="80.391" size="1.778" layer="97">Power in:
-5V:        SJ1 geschlossen, IC1, IC2 (C3, C4) unbestückt
-7-12V:   SJ1 offen, IC2 bestückt (1117), C3,C4 bestückt, IC1 unbestückt
-13-24V: SJ1 offen, IC2 unbestückt, IC1 bestückt (7805), C3, C4 bestückt.
+<text x="189.611" y="80.391" size="1.778" layer="97">Stromversorgung:
+---------------------
+5V:     SJ1 geschlossen, IC1, IC2 (C3, C4) unbestueckt
+7-12V:  SJ1 offen, IC2 bestueckt (1117 5.0), C3, C4 bestueckt, IC1 unbestueckt
+13-24V: SJ1 offen, IC2 unbestueckt, IC1 bestueckt (7805), C3, C4 bestueckt.
 
-onewire:
-genrell:
-SJ3 soll eine korrekte Einstellung je nach Betriebsart 3,3V/5V aufweisen
-ZD1 (ESD protetion) kann überbrückt werden
-R17 und C1 bilden einen optionale Filter. R17 ist jedoch meistens sinnvoll
+Bus Konfiguration:
+---------------------
+generell:
+- SJ3 regelt die Stromversorgung des Busses (gilt nicht für parasitaer versorgte Devices)
+  und muss eine korrekte Einstellung je nach Betriebsart 3.3V/5V aufweisen
+- ZD1 (ESD protection) kann überbrueckt werden
+- R17 und C1 bilden einen optionalen Filter. R17 kann jedoch auch alleine sinnvoll sein.
 
 ohne Busmaster:
-R1 wird in diesem Betriebsart als Pullup nötig sein
- - 3,3V: SJ2 geschlossen, R21, R22, Q4, IC3, Q1, R18 unbestückt. 
-   R13, R14, Q2,Q3, R15,R16 optional (nötig nur, wenn I2C mit 5Vanderweitig benötig wird)
-- 5V:    SJ2 offen, R21, R22, Q4 bestückt, IC3, Q1, R18 unbestückt. 
-   R13, R14, Q2,Q3, R15,R16 optional
+- R1 bestueckt. Das ist ein Pullup (i.d.R. zwischen 1k und 2k2).  
+  Sein Wert haengt von der Anzahl der Slaves und der Laenge der Leitung ab.
+- i2c-LevelShifter (R13, R14, Q2, Q3, R15, R16) ist optional und 
+  wird nur benoetigt, wenn 5V-I2C-Bus anderweitig verwendet wird).
+- BusMaster-Chip (IC3), StrongPullup-Schaltung (Q1, R18) unbestueckt. 
+=&gt; 3.3V-Bus: SJ2 geschlossen, 1w-LevelShifter (R21, R22, Q4) unbestueckt. 
+=&gt; 5V-Bus:    SJ2 offen, 1w-LevelShifter bestueckt. 
 
 mit Busmaster:
- SJ2 offen, R21, R22, Q4, R1 unbestückt. 
- R13, R14, Q2, Q3, R15, R16 bestückt
- Q1 und R18 bilden eine optionale 'strong pullup' Schaltung</text>
+- SJ2 offen, 1w-LevelShifter unbestueckt. 
+- i2c-LevelShifter bestueckt
+- Q1 und R18 bilden eine optionale 'strong pullup' Schaltung.
+</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="-78.74" y="-40.64"/>
