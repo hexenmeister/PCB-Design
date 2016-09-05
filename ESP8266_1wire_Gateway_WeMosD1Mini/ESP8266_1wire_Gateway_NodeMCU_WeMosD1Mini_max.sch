@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -13727,7 +13727,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R16" library="resistor" deviceset="R-EU_" device="R0805" value="4k7"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="Q1" library="transistor-small-signal" deviceset="BSS84" device=""/>
-<part name="R18" library="my" deviceset="R0805_SMALL_GAP" device="" value="cur.limit"/>
+<part name="R18" library="my" deviceset="R0805_SMALL_GAP" device="" value="cur.limit (50-100)"/>
 <part name="R17" library="my" deviceset="R0805_SMALL_GAP" device="" value="100*"/>
 <part name="Q2" library="my" deviceset="BSS138" device=""/>
 <part name="Q3" library="my" deviceset="BSS138" device=""/>
@@ -13900,8 +13900,8 @@ mit Busmaster:
 <attribute name="NAME" x="161.925" y="90.17" size="1.778" layer="95"/>
 </instance>
 <instance part="R19" gate="G$1" x="147.32" y="100.965"/>
-<instance part="LED1" gate="G$1" x="159.385" y="100.965" smashed="yes" rot="R270">
-<attribute name="NAME" x="159.258" y="103.759" size="1.778" layer="95"/>
+<instance part="LED1" gate="G$1" x="159.385" y="100.965" smashed="yes" rot="R90">
+<attribute name="NAME" x="167.132" y="105.791" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="GND3" gate="1" x="169.545" y="100.965" rot="R90"/>
 <instance part="GND2" gate="1" x="168.91" y="85.09" rot="R90"/>
@@ -14032,11 +14032,6 @@ mit Busmaster:
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="161.925" y1="100.965" x2="167.005" y2="100.965" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="OPT" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="166.37" y1="85.09" x2="163.83" y2="85.09" width="0.1524" layer="91"/>
@@ -14081,6 +14076,11 @@ mit Busmaster:
 <pinref part="I2C_4" gate="A" pin="2"/>
 <wire x1="121.285" y1="123.825" x2="109.855" y2="123.825" width="0.1524" layer="91"/>
 <junction x="121.285" y="123.825"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<wire x1="167.005" y1="100.965" x2="164.465" y2="100.965" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -14455,13 +14455,6 @@ mit Busmaster:
 <junction x="28.575" y="23.495"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="100.965" x2="154.305" y2="100.965" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="OPT" gate="G$1" pin="1"/>
@@ -14671,6 +14664,13 @@ mit Busmaster:
 <wire x1="30.48" y1="12.065" x2="28.575" y2="12.065" width="0.1524" layer="91"/>
 <junction x="28.575" y="12.065"/>
 <label x="21.59" y="24.13" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="100.965" x2="156.845" y2="100.965" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>
