@@ -13777,6 +13777,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="I2C_4" library="my" deviceset="PINHD-1X4_S" device="" value=" I2C 5V"/>
 <part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NO" device="YES_SILK" value="direct | busmaster"/>
 <part name="JP1" library="my" deviceset="PINHD-1X3_S" device=""/>
+<part name="D2" library="ihpcb-diode" deviceset="SS14" device="" value="SS14"/>
 </parts>
 <sheets>
 <sheet>
@@ -13866,8 +13867,8 @@ mit Busmaster:
 <instance part="GND6" gate="1" x="-27.94" y="83.82"/>
 <instance part="C3" gate="G$1" x="-38.1" y="96.52"/>
 <instance part="C4" gate="G$1" x="-16.51" y="96.52"/>
-<instance part="PF1" gate="G$1" x="-33.02" y="73.025" smashed="yes" rot="R180">
-<attribute name="NAME" x="-31.115" y="77.47" size="1.778" layer="95" rot="R180"/>
+<instance part="PF1" gate="G$1" x="45.085" y="72.39" smashed="yes" rot="R180">
+<attribute name="NAME" x="46.99" y="76.835" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="VIN1" gate="G$1" x="-67.945" y="96.52" rot="MR0"/>
 <instance part="R14" gate="G$1" x="-44.45" y="33.147" rot="R90"/>
@@ -13963,7 +13964,7 @@ mit Busmaster:
 <attribute name="NAME" x="8.001" y="-30.48" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="M1" gate="G$1" x="52.07" y="86.36"/>
-<instance part="GND10" gate="1" x="91.44" y="80.645"/>
+<instance part="GND10" gate="1" x="100.33" y="81.28"/>
 <instance part="IC1" gate="A1" x="-27.305" y="116.205"/>
 <instance part="GND9" gate="1" x="-27.305" y="106.045"/>
 <instance part="SJ1" gate="G$1" x="-43.815" y="119.38" smashed="yes" rot="R90">
@@ -13984,6 +13985,9 @@ mit Busmaster:
 <attribute name="NAME" x="25.146" y="20.955" size="1.778" layer="95" rot="R270"/>
 </instance>
 <instance part="JP1" gate="A" x="40.64" y="18.415"/>
+<instance part="D2" gate="D" x="29.21" y="78.74" smashed="yes">
+<attribute name="NAME" x="28.1686" y="80.7466" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14055,9 +14059,9 @@ mit Busmaster:
 <pinref part="GND1" gate="1" pin="MP"/>
 </segment>
 <segment>
-<wire x1="72.39" y1="91.44" x2="91.44" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="91.44" x2="100.33" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="GND"/>
-<wire x1="91.44" y1="91.44" x2="91.44" y2="83.185" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="91.44" x2="100.33" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -14121,9 +14125,6 @@ mit Busmaster:
 </net>
 <net name="5V_IN" class="0">
 <segment>
-<wire x1="72.39" y1="88.9" x2="80.01" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="M1" gate="G$1" pin="5V"/>
-<label x="80.01" y="88.9" size="1.778" layer="95" xref="yes"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="-16.51" y1="100.33" x2="-9.525" y2="100.33" width="0.1524" layer="91"/>
 <junction x="-16.51" y="100.33"/>
@@ -14132,17 +14133,11 @@ mit Busmaster:
 <wire x1="-20.32" y1="100.33" x2="-16.51" y2="100.33" width="0.1524" layer="91"/>
 <label x="-15.24" y="101.6" size="1.778" layer="95"/>
 <wire x1="-9.525" y1="100.33" x2="-9.525" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-9.525" y1="78.74" x2="-38.1" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="78.74" x2="-38.1" y2="73.025" width="0.1524" layer="91"/>
-<wire x1="-37.211" y1="78.74" x2="-38.1" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-38.1" y="78.74"/>
-<wire x1="-38.1" y1="78.74" x2="-57.277" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-9.525" y1="78.74" x2="-57.277" y2="78.74" width="0.1524" layer="91"/>
 <label x="-57.15" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="PF1" gate="G$1" pin="2"/>
-<label x="20.955" y="78.74" size="1.778" layer="95"/>
-<wire x1="-9.525" y1="78.74" x2="80.01" y2="78.74" width="0.1524" layer="91"/>
+<label x="3.81" y="79.375" size="1.778" layer="95"/>
+<wire x1="-9.525" y1="78.74" x2="26.67" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-9.525" y="78.74"/>
-<wire x1="80.01" y1="88.9" x2="80.01" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A1" pin="VO"/>
 <wire x1="-17.145" y1="116.205" x2="-16.51" y2="116.205" width="0.1524" layer="91"/>
 <wire x1="-16.51" y1="116.205" x2="-16.51" y2="100.33" width="0.1524" layer="91"/>
@@ -14151,6 +14146,7 @@ mit Busmaster:
 <wire x1="-43.815" y1="127" x2="-16.51" y2="127" width="0.1524" layer="91"/>
 <wire x1="-16.51" y1="127" x2="-16.51" y2="116.205" width="0.1524" layer="91"/>
 <junction x="-16.51" y="116.205"/>
+<pinref part="D2" gate="D" pin="ANODE"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -14337,8 +14333,8 @@ mit Busmaster:
 </segment>
 <segment>
 <pinref part="PF1" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="73.025" x2="-19.05" y2="73.025" width="0.1524" layer="91"/>
-<label x="-18.415" y="73.025" size="1.778" layer="95" xref="yes"/>
+<wire x1="50.165" y1="72.39" x2="59.055" y2="72.39" width="0.1524" layer="91"/>
+<label x="59.69" y="72.39" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SJ3" gate="G$1" pin="3"/>
@@ -14671,6 +14667,21 @@ mit Busmaster:
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="152.4" y1="100.965" x2="156.845" y2="100.965" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="5V_WEMOS" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="5V"/>
+<wire x1="72.39" y1="88.9" x2="80.01" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="80.01" y1="88.9" x2="80.01" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="78.74" x2="36.83" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="D2" gate="D" pin="CATHODE"/>
+<label x="80.01" y="88.9" size="1.778" layer="95" xref="yes"/>
+<pinref part="PF1" gate="G$1" pin="2"/>
+<wire x1="36.83" y1="78.74" x2="80.01" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="78.74" x2="36.83" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="36.83" y1="72.39" x2="40.005" y2="72.39" width="0.1524" layer="91"/>
+<junction x="36.83" y="78.74"/>
 </segment>
 </net>
 </nets>
