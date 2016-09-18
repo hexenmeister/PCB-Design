@@ -12783,6 +12783,22 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="PAD-JUMPER-3-NO_YES_SILK">
+<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-1.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 <package name="PAD-JUMPER-3-2OF3_NC_BY_TRACE_YES_SILK_FULL_BOX">
 <wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
@@ -12823,8 +12839,70 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="0" x2="1.27" y2="0" width="0.4064" layer="1"/>
 <wire x1="0" y1="0" x2="1.27" y2="0" width="0.4064" layer="51"/>
 </package>
+<package name="PAD-JUMPER-3-NO_YES_SILK_FULL_BOX_WIDE_SPACING">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="3.175" y1="-1.524" x2="-3.175" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.524" x2="3.429" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.429" y1="1.27" x2="-3.175" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.429" y1="-1.27" x2="-3.175" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.175" y1="-1.524" x2="3.429" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.429" y1="-1.27" x2="3.429" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-1.27" x2="-3.429" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.524" x2="3.175" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
+<wire x1="-2.794" y1="0" x2="-3.302" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="0.127" x2="2.032" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-2.032" y1="-0.127" x2="-2.032" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="3" x="2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-3.429" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
+<package name="PAD-JUMPER-3-NO_YES_SILK_FULL_BOX">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
 </packages>
 <symbols>
+<symbol name="PAD-JUMPER-3-NO">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
 <symbol name="PAD-JUMPER-3-2OF3-NC_BY_TRACE">
 <wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
 <wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
@@ -12844,6 +12922,43 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="JUMPER-PAD-3-NO" prefix="SJ">
+<gates>
+<gate name="G$1" symbol="PAD-JUMPER-3-NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PAD-JUMPER-3-NO_YES_SILK_FULL_BOX_WIDE_SPACING">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FULL_BOX_SILK" package="PAD-JUMPER-3-NO_YES_SILK_FULL_BOX">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="YES_SILK" package="PAD-JUMPER-3-NO_YES_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="JUMPER-PAD-3-2OF3_NC_BY_TRACE" prefix="SJ">
 <gates>
 <gate name="G$1" symbol="PAD-JUMPER-3-2OF3-NC_BY_TRACE" x="0" y="0"/>
@@ -13287,6 +13402,8 @@ Some male, some female. Watch your step!</description>
 <part name="USB" library="SparkFun-Connectors" deviceset="USB_MICROB_PLUG" device="CONN-11752"/>
 <part name="IC4" library="Sensor" deviceset="ATSHA204A" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
+<part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NO" device="YES_SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -13331,7 +13448,8 @@ Widerstand entfallen)</text>
 <text x="-22.86" y="-10.16" size="1.778" layer="97">Error (R)</text>
 <text x="-13.97" y="-19.05" size="1.778" layer="97">TX (Y)</text>
 <text x="-22.86" y="-27.94" size="1.778" layer="97">RX (G)</text>
-<text x="53.34" y="20.32" size="1.778" layer="97">(D3)</text>
+<text x="53.975" y="20.32" size="1.778" layer="97">D3</text>
+<text x="59.055" y="20.32" size="1.778" layer="97">D4</text>
 </plain>
 <instances>
 <instance part="ESP" gate="G$1" x="20.32" y="81.28"/>
@@ -13375,8 +13493,8 @@ Widerstand entfallen)</text>
 <instance part="RADIO2" gate="G$1" x="154.94" y="56.515"/>
 <instance part="P+1" gate="VCC" x="123.825" y="55.245" rot="R90"/>
 <instance part="GND1" gate="1" x="120.015" y="57.785" rot="R270"/>
-<instance part="INCLUSION" gate="G$1" x="26.67" y="-26.035" rot="R270"/>
-<instance part="GND2" gate="1" x="42.545" y="-26.035" rot="R90"/>
+<instance part="INCLUSION" gate="G$1" x="20.32" y="-26.67" rot="R270"/>
+<instance part="GND2" gate="1" x="36.195" y="-26.67" rot="R90"/>
 <instance part="R12" gate="G$1" x="-50.165" y="-8.89"/>
 <instance part="R13" gate="G$1" x="-50.165" y="-17.78"/>
 <instance part="R14" gate="G$1" x="-50.165" y="-26.67"/>
@@ -13399,8 +13517,10 @@ Widerstand entfallen)</text>
 <instance part="R15" gate="G$1" x="69.85" y="63.5" rot="R90"/>
 <instance part="C2" gate="G$1" x="132.08" y="94.615" rot="R90"/>
 <instance part="USB" gate="G$1" x="146.05" y="19.685"/>
-<instance part="IC4" gate="U1" x="24.765" y="-1.27"/>
-<instance part="GND4" gate="1" x="9.525" y="-1.27" rot="R270"/>
+<instance part="IC4" gate="U1" x="18.415" y="-1.905"/>
+<instance part="GND4" gate="1" x="3.175" y="-1.905" rot="R270"/>
+<instance part="SJ2" gate="G$1" x="50.165" y="-13.97" smashed="yes" rot="MR180"/>
+<instance part="SJ3" gate="G$1" x="60.325" y="-13.97" smashed="yes" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -13517,9 +13637,9 @@ Widerstand entfallen)</text>
 <label x="-13.97" y="-13.97" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<label x="37.465" y="1.905" size="1.778" layer="95"/>
+<label x="31.115" y="1.27" size="1.778" layer="95"/>
 <pinref part="IC4" gate="U1" pin="VCC"/>
-<wire x1="34.925" y1="1.27" x2="40.64" y2="1.27" width="0.1524" layer="91"/>
+<wire x1="28.575" y1="0.635" x2="34.29" y2="0.635" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13588,7 +13708,7 @@ Widerstand entfallen)</text>
 <segment>
 <pinref part="INCLUSION" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="40.005" y1="-26.035" x2="31.75" y2="-26.035" width="0.1524" layer="91"/>
+<wire x1="33.655" y1="-26.67" x2="25.4" y2="-26.67" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ1" gate="G$1" pin="1"/>
@@ -13608,7 +13728,7 @@ Widerstand entfallen)</text>
 </segment>
 <segment>
 <pinref part="IC4" gate="U1" pin="GND"/>
-<wire x1="14.605" y1="-1.27" x2="12.065" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="8.255" y1="-1.905" x2="5.715" y2="-1.905" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -13809,20 +13929,16 @@ Widerstand entfallen)</text>
 <label x="-69.85" y="-8.255" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="ESP" gate="G$1" pin="GPIO2"/>
-<wire x1="30.48" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="76.2" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
-<junction x="60.96" y="76.2"/>
-<wire x1="60.96" y1="76.2" x2="60.96" y2="19.05" width="0.1524" layer="91"/>
-<label x="60.96" y="24.13" size="1.778" layer="95" rot="R90"/>
+<pinref part="SJ3" gate="G$1" pin="2"/>
+<wire x1="65.405" y1="-13.97" x2="69.215" y2="-13.97" width="0.1524" layer="91"/>
+<label x="67.31" y="-13.335" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INCL" class="0">
 <segment>
-<label x="6.35" y="-26.035" size="1.778" layer="95"/>
+<label x="0" y="-26.67" size="1.778" layer="95"/>
 <pinref part="INCLUSION" gate="G$1" pin="1"/>
-<wire x1="21.59" y1="-26.035" x2="5.08" y2="-26.035" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-26.67" x2="-1.27" y2="-26.67" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ESP" gate="G$1" pin="GPIO5"/>
@@ -13874,15 +13990,33 @@ Widerstand entfallen)</text>
 </net>
 <net name="ATSHA" class="0">
 <segment>
-<wire x1="34.925" y1="-3.81" x2="40.64" y2="-3.81" width="0.1524" layer="91"/>
-<label x="37.465" y="-3.175" size="1.778" layer="95"/>
+<wire x1="28.575" y1="-4.445" x2="34.29" y2="-4.445" width="0.1524" layer="91"/>
+<label x="31.115" y="-3.81" size="1.778" layer="95"/>
 <pinref part="IC4" gate="U1" pin="SDA"/>
+</segment>
+<segment>
+<pinref part="SJ2" gate="G$1" pin="2"/>
+<wire x1="45.085" y1="-13.97" x2="40.64" y2="-13.97" width="0.1524" layer="91"/>
+<label x="39.37" y="-13.335" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D3" class="0">
+<segment>
+<pinref part="SJ2" gate="G$1" pin="3"/>
+<wire x1="50.165" y1="-8.89" x2="50.165" y2="-6.985" width="0.1524" layer="91"/>
+<pinref part="SJ3" gate="G$1" pin="1"/>
+<wire x1="50.165" y1="-6.985" x2="58.42" y2="-6.985" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-6.985" x2="60.325" y2="-6.985" width="0.1524" layer="91"/>
+<wire x1="60.325" y1="-6.985" x2="60.325" y2="-8.89" width="0.1524" layer="91"/>
+<label x="55.88" y="-5.08" size="1.778" layer="95" rot="R180"/>
+<wire x1="58.42" y1="-6.985" x2="58.42" y2="-3.81" width="0.1524" layer="91"/>
+<junction x="58.42" y="-6.985"/>
 </segment>
 <segment>
 <pinref part="ESP" gate="G$1" pin="GPIO0"/>
 <wire x1="69.85" y1="78.74" x2="55.88" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="78.74" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="78.74" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
 <junction x="55.88" y="78.74"/>
 <label x="55.88" y="25.4" size="1.778" layer="95" rot="R90"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -13891,6 +14025,28 @@ Widerstand entfallen)</text>
 <wire x1="81.28" y1="78.74" x2="69.85" y2="78.74" width="0.1524" layer="91"/>
 <junction x="69.85" y="78.74"/>
 <pinref part="R15" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="D4" class="0">
+<segment>
+<pinref part="SJ3" gate="G$1" pin="3"/>
+<wire x1="60.325" y1="-19.05" x2="60.325" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="SJ2" gate="G$1" pin="1"/>
+<wire x1="60.325" y1="-20.32" x2="58.42" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-20.32" x2="50.165" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="50.165" y1="-20.32" x2="50.165" y2="-19.05" width="0.1524" layer="91"/>
+<label x="55.88" y="-20.955" size="1.778" layer="95" rot="R180"/>
+<wire x1="58.42" y1="-20.32" x2="58.42" y2="-23.495" width="0.1524" layer="91"/>
+<junction x="58.42" y="-20.32"/>
+</segment>
+<segment>
+<pinref part="ESP" gate="G$1" pin="GPIO2"/>
+<wire x1="30.48" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="76.2" x2="60.96" y2="106.68" width="0.1524" layer="91"/>
+<junction x="60.96" y="76.2"/>
+<wire x1="60.96" y1="76.2" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
+<label x="60.96" y="24.13" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
