@@ -76,7 +76,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -86,6 +92,7 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
@@ -128,6 +135,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -13778,6 +13787,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ4" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NO" device="YES_SILK" value="direct | busmaster"/>
 <part name="JP1" library="my" deviceset="PINHD-1X3_S" device=""/>
 <part name="D2" library="ihpcb-diode" deviceset="SS14" device="" value="SS14"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="R0805" value="470"/>
 </parts>
 <sheets>
 <sheet>
@@ -13967,8 +13977,8 @@ mit Busmaster:
 <instance part="GND10" gate="1" x="100.33" y="81.28"/>
 <instance part="IC1" gate="A1" x="-27.305" y="116.205"/>
 <instance part="GND9" gate="1" x="-27.305" y="106.045"/>
-<instance part="SJ1" gate="G$1" x="-43.815" y="119.38" smashed="yes" rot="R90">
-<attribute name="NAME" x="-46.355" y="116.84" size="1.778" layer="95" rot="R90"/>
+<instance part="SJ1" gate="G$1" x="-49.53" y="120.015" smashed="yes" rot="R90">
+<attribute name="NAME" x="-52.07" y="117.475" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="SJ2" gate="G$1" x="-34.925" y="58.42" smashed="yes">
 <attribute name="NAME" x="-37.465" y="60.96" size="1.778" layer="95"/>
@@ -13988,6 +13998,7 @@ mit Busmaster:
 <instance part="D2" gate="D" x="29.21" y="78.74" smashed="yes">
 <attribute name="NAME" x="28.1686" y="80.7466" size="1.778" layer="95"/>
 </instance>
+<instance part="R5" gate="G$1" x="19.685" y="106.68" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14090,18 +14101,27 @@ mit Busmaster:
 <net name="VIN" class="0">
 <segment>
 <pinref part="D1" gate="D" pin="ANODE"/>
-<wire x1="-50.8" y1="100.33" x2="-59.69" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="100.33" x2="-53.975" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="-53.975" y1="100.33" x2="-59.69" y2="100.33" width="0.1524" layer="91"/>
 <wire x1="-59.69" y1="100.33" x2="-59.69" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-59.69" y1="96.52" x2="-60.325" y2="96.52" width="0.1524" layer="91"/>
 <label x="-62.23" y="100.965" size="1.778" layer="95"/>
 <pinref part="VIN1" gate="G$1" pin="B-1"/>
+<pinref part="SJ1" gate="G$1" pin="1"/>
+<wire x1="-49.53" y1="114.935" x2="-49.53" y2="112.395" width="0.1524" layer="91"/>
+<wire x1="-49.53" y1="112.395" x2="-53.975" y2="112.395" width="0.1524" layer="91"/>
+<wire x1="-53.975" y1="112.395" x2="-53.975" y2="100.33" width="0.1524" layer="91"/>
+<junction x="-53.975" y="100.33"/>
 </segment>
 </net>
 <net name="GPIO16_WAKE" class="0">
 <segment>
-<wire x1="27.305" y1="101.6" x2="46.99" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="D0"/>
 <label x="29.845" y="101.6" size="1.778" layer="95"/>
+<wire x1="12.7" y1="101.6" x2="46.99" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="101.6" x2="12.7" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="106.68" x2="14.605" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -14115,12 +14135,7 @@ mit Busmaster:
 <pinref part="D1" gate="D" pin="CATHODE"/>
 <pinref part="IC1" gate="A1" pin="VI"/>
 <wire x1="-37.465" y1="116.205" x2="-38.1" y2="116.205" width="0.1524" layer="91"/>
-<wire x1="-38.1" y1="116.205" x2="-38.1" y2="112.395" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="G$1" pin="1"/>
-<wire x1="-38.1" y1="112.395" x2="-38.1" y2="100.33" width="0.1524" layer="91"/>
-<wire x1="-43.815" y1="114.3" x2="-43.815" y2="112.395" width="0.1524" layer="91"/>
-<wire x1="-43.815" y1="112.395" x2="-38.1" y2="112.395" width="0.1524" layer="91"/>
-<junction x="-38.1" y="112.395"/>
+<wire x1="-38.1" y1="116.205" x2="-38.1" y2="100.33" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V_IN" class="0">
@@ -14142,8 +14157,8 @@ mit Busmaster:
 <wire x1="-17.145" y1="116.205" x2="-16.51" y2="116.205" width="0.1524" layer="91"/>
 <wire x1="-16.51" y1="116.205" x2="-16.51" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="G$1" pin="2"/>
-<wire x1="-43.815" y1="124.46" x2="-43.815" y2="127" width="0.1524" layer="91"/>
-<wire x1="-43.815" y1="127" x2="-16.51" y2="127" width="0.1524" layer="91"/>
+<wire x1="-49.53" y1="125.095" x2="-49.53" y2="127" width="0.1524" layer="91"/>
+<wire x1="-49.53" y1="127" x2="-16.51" y2="127" width="0.1524" layer="91"/>
 <wire x1="-16.51" y1="127" x2="-16.51" y2="116.205" width="0.1524" layer="91"/>
 <junction x="-16.51" y="116.205"/>
 <pinref part="D2" gate="D" pin="ANODE"/>
@@ -14187,14 +14202,14 @@ mit Busmaster:
 <label x="-45.72" y="-26.035" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="7.62" y1="125.095" x2="15.875" y2="125.095" width="0.1524" layer="91"/>
-<wire x1="15.875" y1="125.095" x2="86.995" y2="125.095" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="125.095" x2="10.795" y2="125.095" width="0.1524" layer="91"/>
+<wire x1="10.795" y1="125.095" x2="86.995" y2="125.095" width="0.1524" layer="91"/>
 <label x="8.255" y="125.095" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="15.875" y1="88.9" x2="15.875" y2="125.095" width="0.1524" layer="91"/>
-<junction x="15.875" y="125.095"/>
+<wire x1="10.795" y1="88.9" x2="10.795" y2="125.095" width="0.1524" layer="91"/>
+<junction x="10.795" y="125.095"/>
 <label x="29.845" y="88.9" size="1.778" layer="95"/>
 <pinref part="M1" gate="G$1" pin="3V3"/>
-<wire x1="15.875" y1="88.9" x2="46.99" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="10.795" y1="88.9" x2="46.99" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SJ3" gate="G$1" pin="1"/>
@@ -14465,9 +14480,10 @@ mit Busmaster:
 <pinref part="RST" gate="1" pin="MP"/>
 </segment>
 <segment>
-<wire x1="46.99" y1="106.68" x2="27.94" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="46.99" y1="106.68" x2="24.765" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="RST"/>
 <label x="29.845" y="106.68" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="LED_OPT" class="0">
